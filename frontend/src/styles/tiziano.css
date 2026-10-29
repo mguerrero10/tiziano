@@ -1,0 +1,165 @@
+.tiziano-chatbot {
+  position: fixed;
+  right: 35px;
+  bottom: 110px;
+  z-index: 10000;
+  display: flex;
+  flex-direction: column;
+  width: 360px;
+  height: min(540px, calc(100vh - 140px));
+  overflow: hidden;
+  border: 1px solid #2b211c1c;
+  border-radius: 14px;
+  background: #fffaf6;
+  box-shadow: 0 10px 30px rgba(43, 33, 28, 0.15);
+  color: #2b211c;
+  font-family: "Inter";
+}
+
+.tiziano-chatbot-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  flex-shrink: 0;
+  padding: 14px 16px;
+  background: #2b211c;
+  color: #f3e8e1;
+}
+
+.tiziano-nombre {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.tiziano-subheader {
+  color: #c9b8ad;
+  font-size: 12px;
+}
+
+.tiziano-header-acciones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.tiziano-header-volver {
+  padding: 5px 10px;
+  border: 1px solid #f3e8e140;
+  border-radius: 8px;
+  background: transparent;
+  color: #f3e8e1;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.tiziano-header-volver:hover {
+  background: #f3e8e11a;
+}
+
+.tiziano-cerrar {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  border-radius: 8px;
+  background: transparent;
+  color: #f3e8e1;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+}
+
+.tiziano-cerrar:hover {
+  background: #f3e8e11a;
+}
+
+.tiziano-chatbot-cuerpo {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: 8px;
+  min-height: 0;
+  padding: 16px;
+  overflow-y: auto;
+}
+
+.tiziano-message {
+  margin-bottom: 6px;
+  padding: 12px 14px;
+  border-radius: 10px;
+  background: #f3e8e1;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tiziano-message strong {
+  display: block;
+  margin-bottom: 4px;
+}
+
+.tiziano-message ul {
+  margin: 0;
+  padding-left: 18px;
+}
+
+.tiziano-opcion,
+.tiziano-volver,
+.tiziano-accion {
+  display: block;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid #2b211c1c;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #2b211c;
+  font: inherit;
+  font-size: 14px;
+  text-align: left;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.tiziano-opcion:hover,
+.tiziano-volver:hover {
+  background: #f3e8e1;
+}
+
+.tiziano-volver {
+  border-color: transparent;
+  background: transparent;
+  color: #7a6a60;
+  text-align: center;
+}
+
+.tiziano-accion {
+  border-color: #a85d64;
+  background: #a85d64;
+  color: #ffffff;
+  font-weight: 600;
+  text-align: center;
+}
+
+.tiziano-accion:hover {
+  background: #96525a;
+}
+
+.tiziano-servicios {
+  margin: 0 0 6px;
+  padding: 0;
+  list-style: none;
+}
+
+.tiziano-servicios li {
+  padding: 10px 2px;
+  border-bottom: 1px solid #2b211c1c;
+  font-size: 14px;
+}
+
+@media (max-width: 600px) {
+  .tiziano-chatbot {
+    right: 12px;
+    bottom: 90px;
+    width: calc(100vw - 24px);
+    height: calc(100dvh - 110px);
+  }
+}
